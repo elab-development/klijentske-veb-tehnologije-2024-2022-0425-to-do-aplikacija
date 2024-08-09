@@ -1,0 +1,89 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: white;
+
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  left: 0px;
+  top: 0px;
+
+  background: #9A1750;
+  border: 3px solid #5D001E;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 25%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.nav-items {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 20px;
+  top: 21px;
+}
+
+.dkategorije, .dcenovnik, .dkontakt, .dprijavi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 32px;
+  background-color: #EE4C7C;
+  border-radius: 100px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem 1.5rem;
+  }
+
+  .logo {
+    position: static;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .nav-items {
+    position: static;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .dkategorije, .dcenovnik, .dkontakt, .dprijavi {
+    width: auto;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 60px;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .dkategorije, .dcenovnik, .dkontakt, .dprijavi {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
