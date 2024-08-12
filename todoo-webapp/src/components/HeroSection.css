@@ -1,52 +1,97 @@
-.hero {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2rem;
-    background-color: #f0f0f0;
-  }
-  
-  .hero-content {
-    max-width: 600px;
-    text-align: left;
-  }
-  
-  .hero-content h1 {
-    color: #9A1750;
-  }
-  
-  .hero-content p {
-    font-size: 1.2rem;
-  }
-  
-  .hero-content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .hero-content li {
-    margin: 0.5rem 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  .hero-content li::before {
-    content: '✓';
-    color: #ffde00;
-    margin-right: 0.5rem;
-  }
-  
-  .cta-btn {
-    background-color: #9A1750;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .hero-image img {
-    max-width: 100%;
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E3E2DF;
+  padding: 2rem;
+  position: absolute;
+  height: 300px;
+  left: 100px;
+  top: 300px;
+  width: calc(100%-200px);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #9A1750;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #5D001E;
+}
+
+/* Media queries za manje ekrane */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
     height: auto;
+    left: 10px;
+    top: 200px;
+    width: calc(100% - 20px);
   }
-  
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    padding: 1rem;
+    left: 10px;
+    top: 150px;
+    width: 100%;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+}

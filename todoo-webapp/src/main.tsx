@@ -1,10 +1,15 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
+import Navbar from './components/Navbar.tsx'
+import HeroSection from './components/HeroSection.tsx'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+const root = ReactDOM.createRoot(document.getElementById('root')!)
+
+root.render(
+  <>
+    <Navbar />
+    <HeroSection />
     <App />
-  </React.StrictMode>,
+  </>,
 )
