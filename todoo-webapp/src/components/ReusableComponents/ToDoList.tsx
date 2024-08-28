@@ -83,7 +83,7 @@ function ToDoList(prop: ToDoListProp) {
             <h1>MOJI ZADACI: <span>{prop.name}</span></h1>
 
             <button onClick={toggleFilter}>
-                {showUnfinishedOnly ? 'Odkrij zavrsene' : 'Sakrij zavrsene'}
+                {showUnfinishedOnly ? 'Otkrij zavrsene' : 'Sakrij zavrsene'}
             </button>
 
             <ul>

@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# ToDoo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ToDoo** je moderna aplikacija za upravljanje zadacima izgrađena koristeći **React**, **TypeScript**, i **Vite**. Ova aplikacija omogućava korisnicima da kreiraju, organizuju, i prate zadatke u jednostavnom i intuitivnom korisničkom interfejsu.
 
-Currently, two official plugins are available:
+## Funkcionalnosti
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dodavanje zadataka**: Korisnici mogu dodavati nove zadatke sa nazivom, opisom, i datumom dospeća.
+- **Izmena i brisanje zadataka**: Mogućnost izmena postojećih zadataka ili brisanje zadataka kada više nisu potrebni.
+- **Označavanje zadataka kao završenih**: Korisnici mogu označiti zadatke kao završene, što pomaže u praćenju napretka.
+- **Filtriranje i pretraga**: Korisnici mogu filtrirati zadatke po statusu ili pretraživati zadatke prema ključnim rečima.
+- **Responzivni dizajn**: Aplikacija je optimizovana za upotrebu na desktop i mobilnim uređajima.
 
-## Expanding the ESLint configuration
+## Instalacija i pokretanje
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. Kloniranje repozitorijuma
 
-- Configure the top-level `parserOptions` property like this:
+Prvo, klonirajte repozitorijum na vašu lokalnu mašinu:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/username/todoo.git
+cd todoo
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 2. Instalacija potrebnih biblioteka
+
+Nakon što ste klonirali repozitorijum, instalirajte potrebne zavisnosti koristeći komandu:
+
+```bash
+npm install
+```
+
+### 3. Pokretanje projekta
+
+Pokretanje se vrsi u Visual Studio Code-u komandom:
+
+```bash
+npm run dev
+```
+
