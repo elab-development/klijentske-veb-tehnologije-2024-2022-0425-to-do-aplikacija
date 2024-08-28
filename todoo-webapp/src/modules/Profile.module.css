@@ -1,0 +1,42 @@
+.container {
+    background-image: url('/QQ.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.container2 {
+    background-color: #E3E2DF;
+    display: flex;
+    border: #9A1750 3px solid;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
+
+}
+
+td {
+    margin: 1rem;
+}
+
+.centered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.table {
+    border-spacing: 0 10px;
+}
+
+.table td {
+    padding: 10px;
+}
