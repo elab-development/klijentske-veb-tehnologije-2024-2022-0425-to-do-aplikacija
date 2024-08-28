@@ -17,8 +17,8 @@
 Prvo, klonirajte repozitorijum na vašu lokalnu mašinu:
 
 ```bash
-git clone https://github.com/username/todoo.git
-cd todoo
+git clone https://github.com/elab-development/klijentske-veb-tehnologije-2024-2022-0425-to-do-aplikacija.git
+cd klijentske-veb-tehnologije-2024-2022-0425-to-do-aplikacija/todoo-webapp
 ```
 
 ### 2. Instalacija potrebnih biblioteka
