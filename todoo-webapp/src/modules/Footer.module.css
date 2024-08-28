@@ -1,0 +1,37 @@
+.footer {
+    background-color: #60041c;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contactInfo {
+    margin: 0.5rem 0;
+}
+
+.socialLinks {
+    margin-top: 1.5rem;
+}
+
+.socialLinks p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.icons img {
+    width: 24px; 
+    height: 24px; 
+    cursor: pointer;
+}
+
+.icons img:hover {
+    opacity: 0.8; 
+}
