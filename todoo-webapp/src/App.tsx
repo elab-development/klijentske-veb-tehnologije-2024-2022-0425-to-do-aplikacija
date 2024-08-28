@@ -1,11 +1,19 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Footer from './components/ReusableComponents/Footer';
+import Header from './components/ReusableComponents/Header';
+import { User } from './types.ts';
+import { useState } from 'react';
 
-const App: React.FC = () => {
+function App(){
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
+
   return (
-    <div className="App">
-
-    </div>
+    <Router>
+      <Header user ={currentUser} setUser={setCurrentUser}/>
+      <Footer />
+    </Router>
   );
 };
 
