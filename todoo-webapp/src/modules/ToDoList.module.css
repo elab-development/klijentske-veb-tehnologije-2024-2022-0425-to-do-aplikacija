@@ -1,0 +1,118 @@
+.toDoList {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+  
+.toDoList h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #812c2d;
+    text-align: center;
+}
+  
+.toDoList h1 span {
+    font-weight: bold;
+    color: #ff4b7b;
+}
+  
+.toDoList ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+
+  
+.finishedTask {
+    border: 2px solid #ff4b7b;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    background-color: #c1c4c1;
+    border: 2px solid #d1d1d1;
+}
+  
+.unfinishedTask {
+    background-color: white;
+    border: 2px solid #ff4b7b;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    background-color: white;
+}
+  
+.toDoList li span {
+    color: #333;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+  
+.deleteButton, .checkButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    color: #ff4b7b;
+    margin-right: 5px;
+}
+  
+.deleteButton:hover, .checkButton:hover {
+    color: #d83c60;
+}
+  
+.toDoList input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ff4b7b;
+    border-radius: 8px;
+    outline: none;
+}
+  
+.addButton {
+    background-color: #ff4b7b;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+  
+.addButton:hover {
+    background-color: #e5436e;
+}
+  
+.deleteButton {
+    background-color: transparent;
+    color: #ff4b7b;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.deleteButton::before {
+    content: '×';
+    font-size: 20px;
+}
+
+
