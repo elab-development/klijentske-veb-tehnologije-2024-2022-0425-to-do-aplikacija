@@ -1,0 +1,32 @@
+.features {
+    background-color: #E3E2DF;
+    padding: 2rem;
+    text-align: center;
+}
+  
+.features h2 {
+    font-size: 1.8rem;
+    color: #a40a57;
+    margin-bottom: 2rem;
+}
+  
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.features ul li {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 1rem;
+}
+  
+.headText {
+    display: flex;
+    justify-content: center;
+}
+
+.sijalica {
+    width: 5rem;
+    height: 5rem;
+}
