@@ -1,0 +1,52 @@
+.hero {
+    background-color: #E3E2DF;
+    padding: 3rem 2rem;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroContent{
+    text-align: center;
+  }
+  .heroContent h2 {
+    font-size: 2rem;
+    color: #a40a57;
+    font-weight: bold;
+  }
+  
+  .heroContent p {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+  }
+  
+  .heroContent ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .heroContent ul li {
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .heroContent button {
+    background-color: #a40a57;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .heroContent button:hover {
+    background-color: #8b084a;
+  }
+  
+  .image{
+    width: 30%;
+  }
