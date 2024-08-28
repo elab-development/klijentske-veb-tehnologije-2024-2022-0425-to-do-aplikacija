@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem;
+    background-image: url("/Q.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.innerContainer {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    background-color: transparent; 
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.heading {
+    color: #9A1750;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    align-items: stretch; 
+}
+
+.flexItem {
+    flex: 0 1 45%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.textBoxDescription {
+    margin-top: 0rem;
+    color: #333;
+    font-size: 1rem;
+    flex-grow: 1; 
+    background-color: #E3E2DF;
+    border-radius: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: #9A1750 3px solid;
+}
+
+.textBoxContainer {
+    margin-top: 1rem;
+}
+
+.textBoxMargin {
+    margin-top: 0.5rem;
+}
+
+.bold {
+    color: #9A1750;
+}
+
+.textBoxContainerHead{
+    margin-bottom: -1rem;
+}
