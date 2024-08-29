@@ -1,7 +1,7 @@
-import style from "../../modules/Contact.module.css";
-import korisnik from "../../assets/slika korisnik.png";
-import { useRef } from "react";
-import { User } from "../../types";
+import style from '../../modules/Contact.module.css';
+import korisnik from '../../assets/slika korisnik.png';
+import { useRef } from 'react';
+import { User } from '../../types';
 
 function Register() {
   const username = useRef<HTMLInputElement>(null);
@@ -20,43 +20,44 @@ function Register() {
       email.current?.value || ''
     );
 
-    let users = localStorage.getItem("all_users");
+    let users = localStorage.getItem('all_users');
     let allUsers: User[] = users ? JSON.parse(users) : [];
 
-    if (allUsers.find(user => user.username === newUser.username)) {
-      alert("Username already exists. Please choose a different username.");
+    if (allUsers.find((user) => user.username === newUser.username)) {
+      alert('Username already exists. Please choose a different username.');
       return;
     }
 
     allUsers.push(newUser);
-    localStorage.setItem("all_users", JSON.stringify(allUsers));
-    alert("Registration successful. You can now log in.");
+    localStorage.setItem('all_users', JSON.stringify(allUsers));
+    alert('Registration successful. You can now log in.');
   }
   return (
     <section>
       <div className={style.container}>
-        <div style={{ backgroundColor: "#e3afbc", borderRadius: "20px", padding: "2rem" }}>
-          <div style={{ textAlign: "center" }}>
-            <img src={korisnik} alt="User icon" style={{ width: "5rem" }} />
+        <div
+          style={{
+            backgroundColor: '#e3afbc',
+            borderRadius: '20px',
+            padding: '2rem',
+          }}
+        >
+          <div style={{ textAlign: 'center' }}>
+            <img src={korisnik} alt='User icon' style={{ width: '5rem' }} />
           </div>
           <form>
             <table>
               <tbody>
                 <tr>
                   <td>
-                    <input
-                      required
-                      type="text"
-                      placeholder="Ime:"
-                      ref={ime}  
-                    />
+                    <input required type='text' placeholder='Ime:' ref={ime} />
                   </td>
                   <td>
                     <input
                       required
-                      type="email"
-                      placeholder="Email:"
-                      ref={email}  
+                      type='email'
+                      placeholder='Email:'
+                      ref={email}
                     />
                   </td>
                 </tr>
@@ -64,17 +65,17 @@ function Register() {
                   <td>
                     <input
                       required
-                      type="text"
-                      placeholder="Prezime:"
-                      ref={prezime}  
+                      type='text'
+                      placeholder='Prezime:'
+                      ref={prezime}
                     />
                   </td>
                   <td>
                     <input
                       required
-                      type="password"
-                      placeholder="Lozinka:"
-                      ref={password} 
+                      type='password'
+                      placeholder='Lozinka:'
+                      ref={password}
                     />
                   </td>
                 </tr>
@@ -82,23 +83,31 @@ function Register() {
                   <td>
                     <input
                       required
-                      type="text"
-                      placeholder="Korisnicko ime:"
-                      ref={username} 
+                      type='text'
+                      placeholder='Korisnicko ime:'
+                      ref={username}
                     />
                   </td>
                   <td>
                     <input
                       required
-                      type="password"
-                      placeholder="Ponovi lozinku:"
-                      ref={againpassword}  
+                      type='password'
+                      placeholder='Ponovi lozinku:'
+                      ref={againpassword}
                     />
                   </td>
                 </tr>
-                <tr style={{ textAlign: "right" }}>
+                <tr style={{ textAlign: 'right' }}>
                   <td colSpan={2}>
-                    <button onClick={register} type="submit" style={{ backgroundColor: "#9A1750", color: "white", fontWeight: "bold" }}>
+                    <button
+                      onClick={register}
+                      type='submit'
+                      style={{
+                        backgroundColor: '#9A1750',
+                        color: 'white',
+                        fontWeight: 'bold',
+                      }}
+                    >
                       Registruj se
                     </button>
                   </td>

@@ -1,12 +1,19 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from "../../modules/Footer.module.css";
-import fbIcon from '../../assets/fb.png'; 
-import igIcon from '../../assets/ig.png'; 
-import ytIcon from '../../assets/yt.png';  
+import styles from '../../modules/Footer.module.css';
+import fbIcon from '../../assets/fb.png';
+import igIcon from '../../assets/ig.png';
+import ytIcon from '../../assets/yt.png';
+import ButtonComponent from './ButtonComponent';
+
 function Footer() {
   const navigate = useNavigate();
   const handleNavigation = (path: string) => {
     navigate(path);
+  };
+
+  const handleButtonClick = () => {
+    console.log('Button clicked!');
   };
 
   return (
@@ -16,18 +23,43 @@ function Footer() {
         <p>Email: todoo@gmail.com</p>
       </div>
       <div className={styles.socialLinks}>
-        <p>Brzi linkovi: 
-          <span onClick={() => handleNavigation('/prijavi-se')}><a>Prijavi se</a></span> | 
-          <span onClick={() => handleNavigation('/kategorije')}><a>Kategorije</a></span> | 
-          <span onClick={() => handleNavigation('/cenovnik')}><a>Cenovnik</a></span> | 
-          <span onClick={() => handleNavigation('/')}><a>O nama</a></span>
+        <p>
+          Brzi linkovi:
+          <span onClick={() => handleNavigation('/prijavi-se')}>
+            <a>Prijavi se</a>
+          </span>{' '}
+          |
+          <span onClick={() => handleNavigation('/kategorije')}>
+            <a>Kategorije</a>
+          </span>{' '}
+          |
+          <span onClick={() => handleNavigation('/cenovnik')}>
+            <a>Cenovnik</a>
+          </span>{' '}
+          |
+          <span onClick={() => handleNavigation('/')}>
+            <a>O nama</a>
+          </span>
         </p>
         <div className={styles.icons}>
-          <img src={fbIcon} alt="Facebook" onClick={() => window.open('https://www.facebook.com', '_blank')} />
-          <img src={igIcon} alt="Instagram" onClick={() => window.open('https://www.instagram.com', '_blank')} />
-          <img src={ytIcon} alt="YouTube" onClick={() => window.open('https://www.youtube.com', '_blank')} />
+          <img
+            src={fbIcon}
+            alt='Facebook'
+            onClick={() => window.open('https://www.facebook.com', '_blank')}
+          />
+          <img
+            src={igIcon}
+            alt='Instagram'
+            onClick={() => window.open('https://www.instagram.com', '_blank')}
+          />
+          <img
+            src={ytIcon}
+            alt='YouTube'
+            onClick={() => window.open('https://www.youtube.com', '_blank')}
+          />
         </div>
       </div>
+      <ButtonComponent onButtonClick={handleButtonClick} />
     </footer>
   );
 }
